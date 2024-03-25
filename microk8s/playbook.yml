@@ -1,0 +1,35 @@
+##################################################
+# DO Community Playbooks: LAMP on Ubuntu 18.04
+##################################################
+---
+- hosts: all
+  become: true
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+    - name: Install docker
+      apt: 
+        name: 'docker.io'
+        update_cache: true
+
+  roles:
+    - role: gepaplexx.microk8s
+      vars:
+        microk8s_plugins:
+          dashboard: true
+          dns: true
+          registry: true
+          istio: true
+          ingress: true
+
+  handlers:
+    - name: Reload docker
+      service:
+        name: docker
+        state: reloaded
+
+    - name: Restart docker
+      service:
+        name: docker
+        state: restarted

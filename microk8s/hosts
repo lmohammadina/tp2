@@ -1,0 +1,9 @@
+[servers]
+148.60.11.242
+
+[servers:vars]
+ansible_connection=ssh
+ansible_ssh_user=zprojet
+ansible_ssh_pass=lili1366
+ansible_become_pass=lili1366
+ansible_python_interpreter=/usr/bin/python3
