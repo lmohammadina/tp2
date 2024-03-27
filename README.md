@@ -1,5 +1,5 @@
 # demoAnsible
-In the image folder, you can see the photos related to the implementation of this project 
+In the images folder, you can finde the photos related to the implementation of this project 
 
 ## Setup
 
