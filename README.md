@@ -13,7 +13,7 @@ git clone https://github.com/barais/demoAnsible
 cd vagrant
 vagant up
 # Check that the VM are up
-# Check that you can login using ssh (ssh vagrant@192.168.56.141 # password: vagrant)
+# Check that you can login using ssh (ssh vagrant@192.168.56.141 )
 ```
 
 ## Demo 1
@@ -24,8 +24,7 @@ Run the playbook
 ansible-playbook playbook.yml -i hosts
 ```
 
-Try to access http://192.168.56.141/index.php
-
+Try to access http://148.60.11.242/
 ## Demo 2
 
 - Kill the VMs and remove them.
@@ -36,7 +35,7 @@ git clone https://github.com/barais/demoAnsible
 cd vagrant
 vagant up
 # Check that the VM are up
-# Check that you can login using ssh (ssh vagrant@192.168.56.141 # password: vagrant)
+# Check that you can login using ssh 
 ```
 
 Run the playbook
@@ -45,4 +44,4 @@ Run the playbook
 ansible-playbook site.yml -i hosts
 ```
 
-Try to access http://192.168.56.141/index.php
+Try to access http://148.60.11.242/
